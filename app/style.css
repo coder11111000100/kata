@@ -140,6 +140,11 @@ body {
   font-family: 'TTLakes-Medium';
   color: rgba(126, 126, 130, 1);
 }
+
+.main__navigation-list {
+  font-family: 'TTLakes-Medium';
+}
+
 .main__description_font {
   font-family: 'TTLakes-Regular';
   color: rgba(27, 28, 33, 1);
@@ -180,6 +185,10 @@ body {
   margin: 0;
   margin-left: 8px;
   margin-right: 8px;
+}
+
+.main__navigation-item:first-child {
+  padding-right: 24px;
 }
 
 .main__navigation-link-service,
@@ -269,9 +278,11 @@ body {
 
 .main__item {
   flex: 0 0 auto;
+  border: 2px solid rgba(248, 248, 248, 1);
   margin-top: 24px;
   margin-right: 16px;
   padding: 8px;
+  cursor: pointer;
 }
 
 .main__item:first-child {
@@ -281,7 +292,7 @@ body {
 }
 
 .main__item:focus {
-  border: 2px solid rgba(184, 255, 236, 1);
+  border-color: rgba(184, 255, 236, 1);
   border-radius: 5px 5px;
   background-color: #ffff;
 }
@@ -293,6 +304,7 @@ body {
   cursor: pointer;
   background: none;
   border: none;
+  padding-bottom: 24px;
 }
 
 .main__detailed_btn::before {
